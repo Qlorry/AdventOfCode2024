@@ -104,7 +104,6 @@
     <ClInclude Include="Helpers\BaseDay.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="Days\Day1.cpp" />
   </ItemGroup>
   <ItemGroup>

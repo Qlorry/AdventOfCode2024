@@ -33,6 +33,5 @@
     <ClCompile Include="Days\Day1.cpp">
       <Filter>Days</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp" />
   </ItemGroup>
 </Project>
