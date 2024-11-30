@@ -15,6 +15,7 @@ $ExamplePuzzleInputFile = Join-Path $InputsPath "$DayNumber/example.txt"
 $MyPuzzleInputFile = Join-Path $InputsPath "$DayNumber/input.txt"
 
 Write-Host "Generating Day $DayNumber..."
+Write-Host "    Generating file: $CppFile from template $CppFileTemplate"
 Write-Host "    Example Puzzle Input File path: $ExamplePuzzleInputFile"
 Write-Host "    My Puzzle Input File path: $MyPuzzleInputFile"
 
