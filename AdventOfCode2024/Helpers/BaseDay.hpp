@@ -1,14 +1,14 @@
 #pragma once
 #include "gtest/gtest.h"
 
-#include "../Common/framework.h"
+#include "../../Common/PuzzleInput.h"
 
 namespace AdventOfCode2024 {
 	class BaseDayTest : public testing::Test {
 	protected:
 		BaseDayTest(int day) {
 			// You can do set-up work for each test here.
-			input_file_name += std::to_string(day) + ".txt";
+			current_day = std::to_string(day);
 		}
 
 		~BaseDayTest() override {
@@ -20,7 +20,6 @@ namespace AdventOfCode2024 {
 		void SetUp() override {
 			// Code here will be called immediately after the constructor (right
 			// before each test).
-			ASSERT_TRUE(input.ReadInput("../../OtherDays/Inputs/", input_file_name));
 		}
 
 		void TearDown() override {
@@ -29,7 +28,13 @@ namespace AdventOfCode2024 {
 			input.Clear();
 		}
 
-		std::string input_file_name = "Day";
-		PuzzleInput input;
+		void ReadInput(bool example)
+		{
+			const auto filename = std::string(example ? "example" : "input") + ".txt";
+			ASSERT_TRUE(input.ReadInput("../../AdventOfCode2024/Inputs/" + current_day, filename));
+		}
+
+		std::string current_day;
+		Common::PuzzleInput input;
 	};
 }

@@ -107,7 +107,7 @@ if (Test-Path $FiltersFile) {
     # Last place with Filter def
     $lastMatch = ($PrjectContentByLine | Select-String '<Filter Include=') | Select-Object -Last 1
     $lineToInsertAfter = $lastMatch.LineNumber - 1
-    $PrjectContentByLine = $PrjectContentByLine[0..$lineToInsertAfter] + ('<Filter Include="Inputs\Day'+ $DayNumber + '"/>') + $PrjectContentByLine[($lineToInsertAfter + 1)..($PrjectContentByLine.Count - 1)]
+    $PrjectContentByLine = $PrjectContentByLine[0..$lineToInsertAfter] + ('    <Filter Include="Inputs\Day'+ $DayNumber + '"/>') + $PrjectContentByLine[($lineToInsertAfter + 1)..($PrjectContentByLine.Count - 1)]
 
     # Save the updated project file
     Set-Content $FiltersFile ($PrjectContentByLine -join "`n")

@@ -10,7 +10,7 @@
     <Filter Include="Inputs">
       <UniqueIdentifier>{cf6904cb-6db3-49cc-ac6d-dd320ac53856}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Inputs\Day1"/>
+    <Filter Include="Inputs\Day1" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp">
@@ -33,10 +33,6 @@
     <ClCompile Include="Days\Day1.cpp">
       <Filter>Days</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
 </Project>
-
-
-
-
-
