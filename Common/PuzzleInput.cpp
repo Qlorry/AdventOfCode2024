@@ -40,6 +40,11 @@ const std::vector<std::string>& PuzzleInput::GetInputStrByLine() const
 	return m_input_lines;
 }
 
+size_t Common::PuzzleInput::NumberOfLines() const
+{
+	return m_input_lines.size();
+}
+
 const std::string& PuzzleInput::GetInputStr() const
 {
 	return m_input_string;

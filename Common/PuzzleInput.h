@@ -16,6 +16,8 @@ namespace Common
 		const std::string& GetInputStr() const;
 		const std::vector<std::string>& GetInputStrByLine() const;
 
+		size_t NumberOfLines() const;
+
 	private:
 		std::string m_input_string;
 		std::vector<std::string> m_input_lines;
