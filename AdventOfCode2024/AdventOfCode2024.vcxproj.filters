@@ -11,6 +11,7 @@
       <UniqueIdentifier>{cf6904cb-6db3-49cc-ac6d-dd320ac53856}</UniqueIdentifier>
     </Filter>
     <Filter Include="Inputs\Day1" />
+    <Filter Include="Inputs\Day2"/>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp">
@@ -27,10 +28,19 @@
     <None Include="Inputs\1\input.txt">
       <Filter>Inputs\Day1</Filter>
     </None>
+    <None Include="Inputs\2\example.txt">
+      <Filter>Inputs\Day2</Filter>
+    </None>
+    <None Include="Inputs\2\input.txt">
+      <Filter>Inputs\Day2</Filter>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Days\Day1.cpp">
+      <Filter>Days</Filter>
+    </ClCompile>
+    <ClCompile Include="Days\Day2.cpp">
       <Filter>Days</Filter>
     </ClCompile>
   </ItemGroup>

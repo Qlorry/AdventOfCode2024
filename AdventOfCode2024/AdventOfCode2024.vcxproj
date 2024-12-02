@@ -99,12 +99,15 @@
     <None Include="packages.config" />
     <None Include="Inputs\1\example.txt" />
     <None Include="Inputs\1\input.txt" />
+    <None Include="Inputs\2\example.txt" />
+    <None Include="Inputs\2\input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Days\Day1.cpp" />
+    <ClCompile Include="Days\Day2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
