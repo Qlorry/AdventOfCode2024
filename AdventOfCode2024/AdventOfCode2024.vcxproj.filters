@@ -11,7 +11,7 @@
       <UniqueIdentifier>{cf6904cb-6db3-49cc-ac6d-dd320ac53856}</UniqueIdentifier>
     </Filter>
     <Filter Include="Inputs\Day1" />
-    <Filter Include="Inputs\Day2"/>
+    <Filter Include="Inputs\Day2" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp">

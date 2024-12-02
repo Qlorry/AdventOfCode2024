@@ -37,7 +37,7 @@ namespace AdventOfCode2024 {
 				res += static_cast<size_t>(std::abs((*first_it) - (*second_it)));
 			}
 
-			std::cout << "Answer is: " << res << std::endl;
+			PrintAnswer(res);
 		}
 
 		void SecondStage()
@@ -62,7 +62,7 @@ namespace AdventOfCode2024 {
 				res += *first_it * second[*first_it];
 			}
 
-			std::cout << "Answer is: " << res << std::endl;
+			PrintAnswer(res);
 		}
 	};
 

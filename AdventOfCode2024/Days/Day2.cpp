@@ -53,7 +53,7 @@ namespace AdventOfCode2024 {
 				if (IsSafe(Common::GetAllNums(line)))
 					safe_reports++;
 			}
-			std::cout << "There are " << safe_reports << " sefe reports" << std::endl;
+			PrintAnswer(safe_reports, "safe reports");
 		}
 
 		void SecondStage()
@@ -85,7 +85,7 @@ namespace AdventOfCode2024 {
 				}
 			}
 
-			std::cout << "There are " << safe_reports << " sefe reports" << std::endl;
+			PrintAnswer(safe_reports, "safe reports");
 		}
 	};
 

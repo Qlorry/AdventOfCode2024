@@ -5,22 +5,26 @@ namespace AdventOfCode2024 {
 	class Day$<day_number> : public BaseDayTest
 	{
 	protected:
-		Day$<day_number>() : BaseDayTest($<day_number>) {
-			std::cout << "Running Day #$<day_number>!" << std::endl;
-		}
+		Day$<day_number>() : BaseDayTest($<day_number>) {}
 
 		void FirstStage()
 		{
+			size_t res = 0;
 			for (const auto& line : input.GetInputStrByLine())
 			{
 			}
+
+			PrintAnswer(safe_reports, "safe reports");
 		}
 
 		void SecondStage()
 		{
+			size_t res = 0;
 			for (const auto& line : input.GetInputStrByLine())
 			{
 			}
+
+			PrintAnswer(safe_reports, "safe reports");
 		}
 	};
 
