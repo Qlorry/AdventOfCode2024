@@ -102,6 +102,8 @@
     <None Include="Inputs\1\input.txt" />
     <None Include="Inputs\2\example.txt" />
     <None Include="Inputs\2\input.txt" />
+    <None Include="Inputs\3\example.txt" />
+    <None Include="Inputs\3\input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp" />
@@ -109,6 +111,7 @@
   <ItemGroup>
     <ClCompile Include="Days\Day1.cpp" />
     <ClCompile Include="Days\Day2.cpp" />
+    <ClCompile Include="Days\Day3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">

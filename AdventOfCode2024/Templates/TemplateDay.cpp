@@ -14,7 +14,7 @@ namespace AdventOfCode2024 {
 			{
 			}
 
-			PrintAnswer(safe_reports, "safe reports");
+			PrintAnswer(res);
 		}
 
 		void SecondStage()
@@ -24,7 +24,7 @@ namespace AdventOfCode2024 {
 			{
 			}
 
-			PrintAnswer(safe_reports, "safe reports");
+			PrintAnswer(res);
 		}
 	};
 

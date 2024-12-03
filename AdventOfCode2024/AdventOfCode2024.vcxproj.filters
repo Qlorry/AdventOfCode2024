@@ -12,6 +12,7 @@
     </Filter>
     <Filter Include="Inputs\Day1" />
     <Filter Include="Inputs\Day2" />
+    <Filter Include="Inputs\Day3"/>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp">
@@ -34,6 +35,12 @@
     <None Include="Inputs\2\input.txt">
       <Filter>Inputs\Day2</Filter>
     </None>
+    <None Include="Inputs\3\example.txt">
+      <Filter>Inputs\Day3</Filter>
+    </None>
+    <None Include="Inputs\3\input.txt">
+      <Filter>Inputs\Day3</Filter>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +48,9 @@
       <Filter>Days</Filter>
     </ClCompile>
     <ClCompile Include="Days\Day2.cpp">
+      <Filter>Days</Filter>
+    </ClCompile>
+    <ClCompile Include="Days\Day3.cpp">
       <Filter>Days</Filter>
     </ClCompile>
   </ItemGroup>
