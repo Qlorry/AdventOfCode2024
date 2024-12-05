@@ -106,6 +106,8 @@
     <None Include="Inputs\3\input.txt" />
     <None Include="Inputs\4\example.txt" />
     <None Include="Inputs\4\input.txt" />
+    <None Include="Inputs\5\example.txt" />
+    <None Include="Inputs\5\input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp" />
@@ -115,6 +117,7 @@
     <ClCompile Include="Days\Day2.cpp" />
     <ClCompile Include="Days\Day3.cpp" />
     <ClCompile Include="Days\Day4.cpp" />
+    <ClCompile Include="Days\Day5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
@@ -132,4 +135,5 @@
     <Error Condition="!Exists('..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets'))" />
   </Target>
 </Project>
+
 
