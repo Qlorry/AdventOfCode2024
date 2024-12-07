@@ -85,8 +85,9 @@
       <PreprocessorDefinitions>X64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>$(SolutionDir)Common\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -110,6 +111,8 @@
     <None Include="Inputs\5\input.txt" />
     <None Include="Inputs\6\example.txt" />
     <None Include="Inputs\6\input.txt" />
+    <None Include="Inputs\7\example.txt" />
+    <None Include="Inputs\7\input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp" />
@@ -121,6 +124,7 @@
     <ClCompile Include="Days\Day4.cpp" />
     <ClCompile Include="Days\Day5.cpp" />
     <ClCompile Include="Days\Day6.cpp" />
+    <ClCompile Include="Days\Day7.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
@@ -138,6 +142,3 @@
     <Error Condition="!Exists('..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets'))" />
   </Target>
 </Project>
-
-
-
