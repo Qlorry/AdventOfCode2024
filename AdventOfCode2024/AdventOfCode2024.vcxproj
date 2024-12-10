@@ -113,6 +113,8 @@
     <None Include="Inputs\6\input.txt" />
     <None Include="Inputs\7\example.txt" />
     <None Include="Inputs\7\input.txt" />
+    <None Include="Inputs\8\example.txt" />
+    <None Include="Inputs\8\input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp" />
@@ -125,6 +127,7 @@
     <ClCompile Include="Days\Day5.cpp" />
     <ClCompile Include="Days\Day6.cpp" />
     <ClCompile Include="Days\Day7.cpp" />
+    <ClCompile Include="Days\Day8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">

@@ -17,6 +17,7 @@
     <Filter Include="Inputs\Day5"/>
     <Filter Include="Inputs\Day6"/>
     <Filter Include="Inputs\Day7"/>
+    <Filter Include="Inputs\Day8"/>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers\BaseDay.hpp">
@@ -69,6 +70,12 @@
     <None Include="Inputs\7\input.txt">
       <Filter>Inputs\Day7</Filter>
     </None>
+    <None Include="Inputs\8\example.txt">
+      <Filter>Inputs\Day8</Filter>
+    </None>
+    <None Include="Inputs\8\input.txt">
+      <Filter>Inputs\Day8</Filter>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,8 +100,12 @@
     <ClCompile Include="Days\Day7.cpp">
       <Filter>Days</Filter>
     </ClCompile>
+    <ClCompile Include="Days\Day8.cpp">
+      <Filter>Days</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
+
 
 
 

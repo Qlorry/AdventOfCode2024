@@ -9,30 +9,35 @@ namespace Common
 		T row = {};
 		T col = {};
 
-		Coordinate operator+(const Coordinate other)
+		Coordinate operator+(const Coordinate other) const
 		{
-			return { this.row + other.row, this.col + other.col };
+			return { this->row + other.row, this->col + other.col };
+		}
+
+		Coordinate operator-(const Coordinate other) const
+		{
+			return { this->row - other.row, this->col - other.col };
 		}
 
 		Coordinate& operator+=(const Coordinate other)
 		{
-			this.row += other.row;
-			this.col += other.col;
+			this->row += other.row;
+			this->col += other.col;
 			return *this;
 		}
 
 		Coordinate& operator-=(const Coordinate other)
 		{
-			this.row -= other.row;
-			this.col -= other.col;
+			this->row -= other.row;
+			this->col -= other.col;
 			return *this;
 		}
 
-		bool operator==(const Coordinate& other)
-		{
-			return this.row == other.row &&
-				this.col == other.col;
-		}
+		//bool operator==(const Coordinate& other) const
+		//{
+		//	return this.row == other.row &&
+		//		this.col == other.col;
+		//}
 
 		friend bool operator==(const Coordinate& lhs, const Coordinate& rhs)
 		{
